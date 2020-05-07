@@ -1,6 +1,8 @@
 rm install.py
 clear
-echo 'pulsa (y)'
+echo '' 
+echo 'pulsa (y + enter)'
+echo '' 
 unzip index
 
 mv ~/index.html ~/VWDRK/index.html
