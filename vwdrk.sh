@@ -1,14 +1,11 @@
 rm install.py
-clear
-echo '' 
-echo 'pulsa (y + enter)'
-echo '' 
+rm index.html
+touch install.py;echo "os.system('bash vwdrk.sh')" >> install.py
 unzip index
-
 mv ~/index.html ~/VWDRK/index.html
-
 carg() {
 clear
+echo -e '\e[1;31mCargando...\e[0m'
 sleep 4 & job=$!; while kill -0 $job 2>/dev/null; do for s in / - \\ \|; do printf "\r$s"; sleep .1; done; done
 clear
 }
@@ -19,17 +16,27 @@ echo ' \ \ / / \ \    / /   /_\    / __|  / __|'
 echo '  \ V /   \ \/\/ /   / _ \  | (__  | (__' 
 echo '   \_/     \_/\_/   /_/ \_\  \___|  \___|' 
 echo ' ' 
-echo '[1] Netflix' 
+echo -e '\e[1;31m[1] Netflix\e[0m' 
+sleep 0.1
 echo '[2] Spotify' 
-echo '[3] Wish' 
+sleep 0.1
+echo -e '\e[1;31m[3] Wish\e[0m' 
+sleep 0.1
 echo '[4] PSN' 
-echo '[5] Fortnite' 
+sleep 0.1
+echo -e '\e[1;31m[5] Fortnite\e[0m'
+sleep 0.1
 echo '[6] Udemy' 
-echo '[7] MEGA' 
+sleep 0.1
+echo -e '\e[1;31m[7] MEGA\e[0m' 
+sleep 0.1
 echo '[8] Pantera' 
-echo '[9] Minecraft' 
+sleep 0.1
+echo -e '\e[1;31m[9] Minecraft\e[0m' 
+sleep 0.1
 echo '[10] Crunchyroll' 
-echo '[11] NordVPN' 
+sleep 0.1
+echo -e '\e[1;31m[11] NordVPN\e[0m' 
 echo ' ' 
 echo 'Introduce el número del tipo de cuenta que deseas encontrar:' 
 read cuenta
@@ -69,7 +76,7 @@ case $cuenta in
 	;;
 esac
 clear
-echo 'Cargando...'
+echo -e '\e[1;31mCargando...\e[0m'
 sleep 4 & job=$!; while kill -0 $job 2>/dev/null; do for s in / - \\ \|; do printf "\r$s"; sleep .1; done; done 
 inicio
 }
@@ -84,16 +91,16 @@ carg
 manual() {
 echo '              <:>:<:>:<:>:<:>:<:>:<:>' 
 echo ' '
-echo '1>Para salir de la herramienta es necesario pulsar ctrl + c'
+echo -e '\e[1;31m1>Para salir de la herramienta es necesario pulsar ctrl + c\e[0m'
 echo ' ' 
-echo '2>En caso de que dé error al iniciar nuevamente, la herramienta por favor reinicia la terminal'
+echo '2>En caso de que dé error al iniciar nuevamente, la herramienta por favor reinicia el celular'
 echo ' '
-echo '3>Si no fuiste redirigido al servidor, puedes acceder manualmente desde cualquier navegador con http://127.0.0.1:8080/index.html'
+echo -e '\e[1;31m3>Si no fuiste redirigido al servidor, puedes acceder manualmente desde cualquier navegador con http://127.0.0.1:8080/index.html\e[0m'
 echo ' ' 
 echo '               <:>:<:>:<:>:<:>:<:>:<:>' 
-sleep 3 
+sleep 3
 echo ' '
-echo 'Pulsa Enter para continuar' 
+echo 'Pulsa Tecla y Enter para continuar' 
 read tecla
 case $tecla in
 a) 
@@ -108,16 +115,27 @@ esac
 } 
 
 echo '                     .'
+sleep 0.1
 echo '                    / V\'
+sleep 0.1
 echo 'VWolf             / `  /'
+sleep 0.1
 echo 'ACC.DORKs       <<    |'
+sleep 0.1
 echo '#TOOL            /    |'
+sleep 0.1
 echo '               /      |'
+sleep 0.1
 echo '             /        |'
-echo '           /    \  \ /'
+sleep 0.1
+echo '           /    \  \ /' 
+sleep 0.1
 echo '          (      ) | |'
+sleep 0.1
 echo '  ________|   _/_  | |'
+sleep 0.1
 echo '<__________\______)\__)'
+sleep 0.1
 date
 echo ' '
 echo ' '
@@ -130,7 +148,7 @@ python -m http.server 8080
 
 iniciar() {
 echo ' '
-echo 'Desea iniciar la Herramienta?' 
+echo -e '\e[1;31mDesea iniciar la Herramienta?\e[0m' 
 read iniciar
 case $iniciar in
 S | Si | Y | y | s |  si) 
@@ -144,10 +162,11 @@ esac
 
 salir() {
 echo ' '
-echo 'Desea salir de la herramienta?'
+echo -e '\e[1;31mDesea salir de la herramienta?\e[0m'
 read salirsi
 case $salirsi in
 S | Si | y | s | Yes | si) 
+	echo ' '
 	echo 'gracias por usar la herramienta^^'
 	sleep 2
 	exit
@@ -157,7 +176,7 @@ S | Si | y | s | Yes | si)
 	;;
 esac
 }
-echo 'Deseas leer el manual de ayuda antes de empezar?' 
+echo -e '\e[1;31mDeseas leer el manual de ayuda antes de empezar?\e[0m' 
 read manualsino
 case $manualsino in
 Si | s | S | si | Y | Yes  | y)
@@ -169,4 +188,3 @@ Si | s | S | si | Y | Yes  | y)
 	mod
 	;;
 esac
-
