@@ -6,5 +6,7 @@ Instalación:
 
 
 git clone https://github.com/VWolf13/VWDRK
+
 cd VWDRK
+
 python install.py
