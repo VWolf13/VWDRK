@@ -1,4 +1,4 @@
-zip index índex.html
+zip index index.html
 rm index.html
 unzip index
 
@@ -81,7 +81,7 @@ carg
 manual() {
 echo '              <:>:<:>:<:>:<:>:<:>:<:>' 
 echo ' '
-echo '1>Para salir de la herramienta es necesario cerrar la terminal'
+echo '1>Para salir de la herramienta es necesario pulsar ctrl + c'
 echo ' ' 
 echo '2>En caso de que dé error al iniciar nuevamente, la herramienta por favor reinicia la terminal'
 echo ' '
