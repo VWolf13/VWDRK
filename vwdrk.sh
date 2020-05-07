@@ -7,7 +7,8 @@ sleep 4 & job=$!; while kill -0 $job 2>/dev/null; do for s in / - \\ \|; do prin
 clear
 }
 mod() {
-echo '__   __ __      __    _      ___    ___'
+clear
+echo ' __   __ __      __    _      ___    ___'
 echo ' \ \ / / \ \    / /   /_\    / __|  / __|' 
 echo '  \ V /   \ \/\/ /   / _ \  | (__  | (__' 
 echo '   \_/     \_/\_/   /_/ \_\  \___|  \___|' 
