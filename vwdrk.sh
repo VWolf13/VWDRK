@@ -86,7 +86,7 @@ echo ' '
 echo '               <:>:<:>:<:>:<:>:<:>:<:>' 
 sleep 3 
 echo ' '
-echo 'Pulsa cualquier tecla para continuar' 
+echo 'Pulsa Enter para continuar' 
 read tecla
 case $tecla in
 a) 
