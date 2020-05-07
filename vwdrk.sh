@@ -67,6 +67,11 @@ sleep 4 & job=$!; while kill -0 $job 2>/dev/null; do for s in / - \\ \|; do prin
 inicio
 }
 
+inicio() {
+echo ' ' 
+am start -a android.intent.action.VIEW -d http://127.0.0.1:8080/index.html
+python -m http.server 8080
+} 
 clear
 carg
 manual() {
@@ -93,9 +98,6 @@ a)
 	mod
 	;;
 esac
-} 
-
-mod
 } 
 
 echo '                     .'
