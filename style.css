@@ -1,0 +1,46 @@
+body {
+  background: #444;
+}
+
+#boton {
+  width: 28px;
+  height: 30px;
+  margin: 10px auto;
+}
+
+#boton div {
+  width: 100%;
+  height: 5px;
+  background: white;
+  margin: 4px auto;
+  transition: all 0.3s;
+  backface-visibility: hidden;
+}
+
+#boton.on .one {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+#boton.on .two {
+  opacity: 0;
+}
+
+#boton.on .three {
+  transform: rotate(-45deg) translate(7px, -8px);
+}
+
+#menu {
+  color: white;
+  border: 1px solid white;
+  width: 350px;
+  height: 300px;
+  padding: 10px;
+  border-radius: 3px;
+  font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
+  line-height: 35px;
+  text-align: center;
+  margin: auto;
+  display: none;
+}
+
+a { color: gold; }
