@@ -1,5 +1,6 @@
 rm index.html
 wget https://github.com/VWolf13/VWDRK/blob/master/index.html
+mv ~/index.html ~/VWDRK/index.html
 
 carg() {
 clear
