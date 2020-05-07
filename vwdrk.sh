@@ -1,5 +1,4 @@
 zip index index.html
-rm index.html
 unzip index
 
 mv ~/index.html ~/VWDRK/index.html
