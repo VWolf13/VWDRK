@@ -1,5 +1,7 @@
+zip index índex.html
 rm index.html
-wget https://github.com/VWolf13/VWDRK/blob/master/index.html
+unzip index
+
 mv ~/index.html ~/VWDRK/index.html
 
 carg() {
