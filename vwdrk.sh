@@ -38,8 +38,7 @@ echo '[10] Crunchyroll'
 sleep 0.1
 echo -e '\e[1;31m[11] NordVPN\e[0m' 
 echo ' ' 
-echo 'Introduce el número del tipo de cuenta que deseas encontrar:' 
-read cuenta
+read -p "Introduce el número del tipo de cuenta que deseas encontrar: " cuenta
 case $cuenta in
 1)
 	sed -i 's/cambiar/Netflix/g' index.html 
@@ -148,8 +147,7 @@ python -m http.server 8080
 
 iniciar() {
 echo ' '
-echo -e '\e[1;31mDesea iniciar la Herramienta?\e[0m' 
-read iniciar
+read -p "Desea iniciar la Herramienta?: " iniciar
 case $iniciar in
 S | Si | Y | y | s |  si) 
 	inicio
